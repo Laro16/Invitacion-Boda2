@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import './App.css';
 
-// Corregido: Se eliminaron todas las extensiones .jsx de los imports
 import Hero from './components/Hero';
 import MusicPlayer from './components/MusicPlayer';
 import Historia from './components/Historia';

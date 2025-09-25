@@ -14,7 +14,7 @@ function App() {
 
   const handlePlaySong = () => {
     if (audioRef.current) {
-        if(audioRef.current.paused) {
+        if(audio.current.paused) {
             audioRef.current.play().catch(() => {});
         } else {
             audioRef.current.pause();
@@ -33,6 +33,7 @@ function App() {
         <Rsvp />
       </main>
       <Footer />
+      {/* ESTA ES LA LÍNEA CORREGIDA */}
       <audio ref={audioRef} src="/musica/fondo.mp3" preload="auto" loop></audio>
     </>
   );

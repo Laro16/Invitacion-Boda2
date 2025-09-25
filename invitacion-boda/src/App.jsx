@@ -1,20 +1,10 @@
-import React, { useRef } from 'react';
-import './App.css';
-
-import Hero from './components/Hero';
-import MusicPlayer from './components/MusicPlayer';
-import Historia from './components/Historia';
-import Lugares from './components/Lugares';
-import Itinerario from './components/Itinerario';
-import Rsvp from './components/Rsvp';
-import Footer from './components/Footer';
-
+// ... (imports y código anterior)
 function App() {
   const audioRef = useRef(null);
 
   const handlePlaySong = () => {
     if (audioRef.current) {
-        if(audioRef.current.paused) {
+        if(audio.current.paused) {
             audioRef.current.play().catch(() => {});
         } else {
             audioRef.current.pause();
@@ -33,6 +23,7 @@ function App() {
         <Rsvp />
       </main>
       <Footer />
+      {/* ESTA ES LA LÍNEA CORREGIDA */}
       <audio ref={audioRef} src="/musica/fondo.mp3" preload="auto" loop></audio>
     </>
   );

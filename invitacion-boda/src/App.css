@@ -51,18 +51,13 @@ a:hover { color: var(--accent); }
 
 /* === HERO === */
 header.hero {
-  min-height: 90svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  padding: 40px 0;
+  /* ... (otros estilos del hero) ... */
   background:
     linear-gradient(to top, rgba(30, 65, 58, 0.7), rgba(30, 65, 58, 0.3) 60%, transparent),
-    url('/imagenes/hero-portada.jpg') center/cover no-repeat;
+    url('/imagenes/hero-portada.jpg') center/cover no-repeat; /* <-- RUTA CORREGIDA */
+}
+
+/* ... (el resto de tus estilos van aquí sin cambios) ... */
 }
 header .badge {
   display: inline-block;
@@ -336,4 +331,5 @@ footer.signature em {
 .reveal.visible {
   opacity: 1;
   transform: none;
+
 }

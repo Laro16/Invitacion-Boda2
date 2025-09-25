@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import './App.css';
 
+// Corregido: Se eliminaron todas las extensiones .jsx de los imports
 import Hero from './components/Hero';
 import MusicPlayer from './components/MusicPlayer';
 import Historia from './components/Historia';
@@ -33,7 +34,7 @@ function App() {
         <Rsvp />
       </main>
       <Footer />
-      <audio ref={audioRef} src="/imagenes/fondo.mp3" preload="auto" loop></audio>
+      <audio ref={audioRef} src="/musica/fondo.mp3" preload="auto" loop></audio>
     </>
   );
 }

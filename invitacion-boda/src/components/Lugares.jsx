@@ -47,4 +47,5 @@ const Lugares = () => {
   );
 };
 
+
 export default Lugares;
